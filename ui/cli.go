@@ -35,7 +35,7 @@ func JogadaDoJogador(j *game.Jogo) {
         if errL != nil || errC != nil {
             fmt.Println("Entrada inválida. Digite apenas números.")
             var lixo string
-            fmt.Scanln(&lixo)
+            _, _ = fmt.Scanln(&lixo)
             continue
         }
 
